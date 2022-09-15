@@ -86,7 +86,8 @@ function onBtnClick() {
             timeLength -= 1000;
             addDateToWindow(timeLength);
         } else {clearInterval(timeLeft);}
-        }, 1000);
+    }, 1000);
+    refs.btn.setAttribute('disabled', '');
 };
 
 refs.btn.addEventListener('click', onBtnClick);
